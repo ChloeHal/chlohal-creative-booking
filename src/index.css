@@ -8,89 +8,100 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 36 56% 91%;
-    --foreground: 220 100% 15%;
+    /* Base colors - background and surfaces */
+    --background: 248 20% 98%;
+    --foreground: 264 30% 32%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 100% 15%;
+    --card: 262 20% 93%;
+    --card-foreground: 264 30% 32%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 100% 15%;
+    --popover: 262 20% 93%;
+    --popover-foreground: 264 30% 32%;
 
-    --primary: 220 100% 33%;
-    --primary-foreground: 36 56% 91%;
+    /* Primary - main brand color */
+    --primary: 254 45% 59%;
+    --primary-foreground: 254 30% 12%;
 
-    --secondary: 36 56% 91%;
-    --secondary-foreground: 220 100% 15%;
+    /* Secondary - supporting color */
+    --secondary: 249 35% 70%;
+    --secondary-foreground: 249 20% 14%;
 
-    --muted: 36 40% 85%;
-    --muted-foreground: 220 30% 40%;
+    /* Muted - subdued elements */
+    --muted: 263 25% 90%;
+    --muted-foreground: 264 35% 45%;
 
-    --accent: 220 100% 33%;
-    --accent-foreground: 36 56% 91%;
+    /* Accent - highlights */
+    --accent: 217 40% 77%;
+    --accent-foreground: 217 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 36 56% 91%;
+    /* Destructive - errors and warnings */
+    --destructive: 15 60% 61%;
+    --destructive-foreground: 15 40% 12%;
 
-    --border: 36 40% 80%;
-    --input: 36 40% 80%;
-    --ring: 220 100% 33%;
+    /* Borders and inputs */
+    --border: 263 25% 90%;
+    --input: 263 25% 90%;
+    --ring: 254 45% 59%;
 
-    --radius: 0.25rem;
+    /* Border radius - all sharp corners */
+    --radius: 0rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar colors */
+    --sidebar-background: 248 20% 98%;
+    --sidebar-foreground: 264 30% 32%;
+    --sidebar-primary: 254 45% 59%;
+    --sidebar-primary-foreground: 254 30% 12%;
+    --sidebar-accent: 262 20% 93%;
+    --sidebar-accent-foreground: 264 30% 32%;
+    --sidebar-border: 263 25% 90%;
+    --sidebar-ring: 254 45% 59%;
   }
 
   .dark {
-    --background: 220 100% 10%;
-    --foreground: 36 56% 91%;
+    /* Base colors - dark theme inversions */
+    --background: 264 35% 20%;
+    --foreground: 248 20% 98%;
 
-    --card: 220 100% 15%;
-    --card-foreground: 36 56% 91%;
+    --card: 264 30% 25%;
+    --card-foreground: 248 20% 98%;
 
-    --popover: 220 100% 15%;
-    --popover-foreground: 36 56% 91%;
+    --popover: 264 30% 25%;
+    --popover-foreground: 248 20% 98%;
 
-    --primary: 36 56% 91%;
-    --primary-foreground: 220 100% 33%;
+    /* Primary - adjusted for dark background */
+    --primary: 254 45% 65%;
+    --primary-foreground: 254 30% 12%;
 
-    --secondary: 220 100% 20%;
-    --secondary-foreground: 36 56% 91%;
+    /* Secondary - adjusted for dark background */
+    --secondary: 249 35% 55%;
+    --secondary-foreground: 249 20% 14%;
 
-    --muted: 220 50% 20%;
-    --muted-foreground: 36 30% 70%;
+    /* Muted - dark theme subdued */
+    --muted: 264 25% 30%;
+    --muted-foreground: 263 25% 75%;
 
-    --accent: 36 56% 91%;
-    --accent-foreground: 220 100% 33%;
+    /* Accent - dark theme highlight */
+    --accent: 217 40% 65%;
+    --accent-foreground: 217 25% 15%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 36 56% 91%;
+    /* Destructive - dark theme errors */
+    --destructive: 15 60% 55%;
+    --destructive-foreground: 15 40% 12%;
 
-    --border: 220 50% 20%;
-    --input: 220 50% 20%;
-    --ring: 36 56% 91%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Borders and inputs - dark theme */
+    --border: 264 25% 30%;
+    --input: 264 25% 30%;
+    --ring: 254 45% 65%;
+
+    /* Sidebar - dark theme */
+    --sidebar-background: 264 35% 20%;
+    --sidebar-foreground: 248 20% 98%;
+    --sidebar-primary: 254 45% 65%;
+    --sidebar-primary-foreground: 254 30% 12%;
+    --sidebar-accent: 264 30% 25%;
+    --sidebar-accent-foreground: 248 20% 98%;
+    --sidebar-border: 264 25% 30%;
+    --sidebar-ring: 254 45% 65%;
   }
 }
 
