@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/Navigation";
-import { LinogravureBookingForm } from "@/components/LinogravureBookingForm";
+import { Button } from "@/components/ui/button";
 
 const Linogravure = () => {
   return (
@@ -68,11 +68,20 @@ const Linogravure = () => {
           </section>
         </div>
 
-        <section>
-          <h2 className="font-serif text-3xl font-bold text-primary mb-6">
-            Réserver votre atelier
-          </h2>
-          <LinogravureBookingForm />
+        <section className="flex justify-center">
+          <Button 
+            asChild 
+            size="lg" 
+            className="text-lg px-8 py-6"
+          >
+            <a 
+              href="https://calendar.app.google/qXQQJ4ghfSfR6bG49" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Réserver votre atelier
+            </a>
+          </Button>
         </section>
       </div>
     </div>

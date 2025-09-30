@@ -38,14 +38,6 @@ export const Navigation = () => {
       >
         Atelier Linogravure
       </Link>
-      <Link
-        to="/admin"
-        className={`text-sm font-medium transition-colors hover:text-primary ${
-          isActive("/admin") ? "text-primary" : "text-foreground"
-        }`}
-      >
-        Admin
-      </Link>
     </>
   );
 
