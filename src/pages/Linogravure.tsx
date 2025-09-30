@@ -12,29 +12,28 @@ const Linogravure = () => {
         </h1>
         
         <div className="prose prose-lg max-w-none mb-12">
-          <section className="mb-8">
-            <h2 className="font-serif text-2xl font-bold text-primary mb-4">
-              Description de l'atelier
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Découvrez l'art fascinant de la linogravure, une technique d'impression ancestrale 
-              qui permet de créer des motifs uniques et personnalisés. Cet atelier vous guidera 
-              pas à pas dans la création de votre propre tampon en linoleum et son impression 
-              sur textile.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Au cours de cet atelier, vous apprendrez à dessiner votre motif, à le graver dans 
-              le linoleum, et à l'imprimer sur le support textile de votre choix. Que vous 
-              souhaitiez personnaliser un tote bag, un t-shirt, ou tout autre support textile, 
-              vous repartirez avec une création unique et le savoir-faire pour recommencer chez vous.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              L'atelier peut se dérouler chez moi dans un cadre inspirant, ou je peux me déplacer 
-              chez vous pour une expérience personnalisée (idéal pour les groupes ou événements 
-              spéciaux).
-            </p>
-          </section>
-
+         <section className="mb-8">
+  <h2 className="font-serif text-2xl font-bold text-primary mb-4">
+    Description de l'atelier
+  </h2>
+  
+  <h3 className="font-serif text-2xl font-bold text-primary mb-3">Le principe :</h3>
+  <p className="text-muted-foreground leading-relaxed mb-4">
+    Cet atelier vous initie aux techniques basiques de la couture à travers un apprentissage progressif et bienveillant. Entre potes (1 à 3 personnes), vous découvrirez les gestes essentiels pour réaliser votre premier projet couture, de la préparation du tissu jusqu'aux finitions. Chaque participant repart avec sa création personnalisée et les bases solides pour continuer à coudre en autonomie.
+  </p>
+  
+  <h3 className="font-serif text-2xl font-bold text-primary mb-3">Le déroulé :</h3>
+  <p className="text-muted-foreground leading-relaxed mb-4">
+    <ul>
+      <li>Introduction aux outils et au matériel de couture (tissus, machine, aiguilles, fils, ciseaux...)</li>
+      <li>Apprentissage des points de base et manipulation de la machine à coudre</li>
+      <li>Choix de votre projet personnel et sélection des tissus dans vos couleurs préférées</li>
+      <li>Réalisation guidée étape par étape : découpe, assemblage, couture et finitions</li>
+      <li>Pause conviviale autour d'un en-cas sucré ou salé</li>
+      <li>Repartez avec votre création terminée !</li>
+    </ul>
+  </p>
+</section>
           <section className="mb-8">
             <h2 className="font-serif text-2xl font-bold text-primary mb-4">
               Informations pratiques
@@ -42,7 +41,7 @@ const Linogravure = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Durée :</span>
-                <span>3 à 4 heures</span>
+                <span>3 heures</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Participants :</span>
@@ -54,15 +53,27 @@ const Linogravure = () => {
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Matériel :</span>
-                <span>Outils de gravure fournis</span>
+                <span>Tout le matériel de linogravure est fourni (plaque, gouges, encre)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-medium min-w-[120px]">Collation :</span>
+                <span>Thé et café à volonté ainsi qu’une petite pause gourmande prévue : sucré ou salé, à décider ensemble à l’avance.</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Support textile :</span>
-                <span>Vous pouvez apporter le vôtre ou je peux le fournir</span>
+                <span>Tote bag, coussin, tee-shirt, ex libris ... (à choisir à l’avance).<br />
+Vous pouvez aussi apporter un textile de seconde main (lavé).<br />
+J’ai simplement besoin d’être briefée en amont sur les supports textiles choisis ou apportés.</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Lieu :</span>
-                <span>Chez moi ou à votre domicile</span>
+                <span>À domicile (Bruxelles uniquement) ou chez moi (quartier La Chasse à Etterbeek, max 6)
+</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-medium min-w-[120px]">Tarif :</span>
+                <span>À partir de 50€ pour un groupe de 3 personnes (prix variable en fonction des suppléments de supports) et +10€ par personne supplémentaire
+</span>
               </li>
             </ul>
           </section>
@@ -83,6 +94,19 @@ const Linogravure = () => {
             </a>
           </Button>
         </section>
+         {/* Galerie de photos  */}
+          <section className="mt-12">
+            <h2 className="font-serif text-2xl font-bold text-primary mb-6 text-center">Galerie</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              <img src="/lino1.png" alt="Couture 1" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/lino2.png" alt="Couture 2" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/lino3.png" alt="Couture 3" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/lino4.png" alt="Couture 4" className="rounded-lg shadow-md object-cover w-full h-64" /> 
+              <img src="/lino5.png" alt="Couture 5" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/lino6.png" alt="Couture 6" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/lino7.png" alt="Couture 7" className="rounded-lg shadow-md object-cover w-full h-64" /> 
+            </div>
+          </section>
       </div>
     </div>
   );

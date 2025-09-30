@@ -16,9 +16,7 @@ const Index = () => {
             Bienvenue chez ChloHal
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Plongez dans l'univers des ateliers créatifs où couture et linogravure 
-            prennent vie. Créez, apprenez et laissez libre cours à votre imagination 
-            dans un cadre convivial et inspirant.
+Hello, j'ai 27 ans et une passion dévorante pour tout ce qui touche au créatif et à ce que je peux faire de mes dix doigts. Ce que j'aime encore plus, c'est de transmettre ma passion et de rendre quelque chose perçu d'inaccessible à la portée de tous.            
           </p>
         </div>
       </section>
@@ -27,19 +25,15 @@ const Index = () => {
       <section className="py-16 px-4 bg-card">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-            Votre créatrice
+            A votre service
           </h2>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            Passionnée par les arts créatifs depuis toujours, je vous invite à découvrir 
-            l'univers fascinant de la couture et de la linogravure. Fort d'une expérience 
-            de plusieurs années dans l'accompagnement créatif, je propose des ateliers 
-            adaptés à tous les niveaux, dans une ambiance chaleureuse et bienveillante.
+            Je vous propose des ateliers de couture et de linogravure, entre potes, où chaque groupe bénéficie d'une activité sur mesure. 
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Chaque atelier est une aventure unique où vous apprendrez les techniques 
-            fondamentales tout en développant votre propre style. Que vous soyez débutant 
-            ou que vous souhaitiez perfectionner vos compétences, vous trouverez ici un 
-            espace pour créer et vous exprimer.
+            Chaque atelier est un moment unique où vous apprendrez les techniques fondamentales tout en créant votre propre projet.             
+            Que vous soyez débutant ou que vous souhaitiez perfectionner vos compétences, vous trouverez ici un espace pour créer, vous amuser, découvrir des passions et vous créer des souvenirs.
+
           </p>
         </div>
       </section>
@@ -68,7 +62,7 @@ const Index = () => {
                 </p>
                 <div className="flex gap-2 mb-4 text-sm text-muted-foreground">
                   <span className="font-medium">Durée :</span>
-                  <span>2-3 heures</span>
+                  <span>3 heures</span>
                 </div>
                 <Link to="/couture">
                   <Button className="w-full">
@@ -88,13 +82,13 @@ const Index = () => {
                   Atelier Linogravure
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Explorez l'art ancestral de la linogravure. Créez vos propres motifs 
-                  et imprimez-les sur textile. Un atelier convivial pour 1 à 8 personnes, 
+                  Explorez la linogravure. Créez une fresque grâce aux motifs 
+                  que vous aurez imaginés et créés. Un atelier convivial pour 1 à 8 personnes, 
                   chez moi ou chez vous.
                 </p>
                 <div className="flex gap-2 mb-4 text-sm text-muted-foreground">
                   <span className="font-medium">Durée :</span>
-                  <span>3-4 heures</span>
+                  <span>3 heures</span>
                 </div>
                 <Link to="/linogravure">
                   <Button className="w-full">

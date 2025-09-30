@@ -34,18 +34,18 @@ const Couture = () => {
             </p>
           </section>
 
-          <section className="mb-8">
+         <section className="mb-8">
             <h2 className="font-serif text-2xl font-bold text-primary mb-4">
               Informations pratiques
             </h2>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Durée :</span>
-                <span>2 à 3 heures</span>
+                <span>3 heures</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Participants :</span>
-                <span>1 à 3 personnes maximum</span>
+                <span>1 à 3 personnes (on peut compter plus si vous apportez votre machine à coudre)</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Niveau :</span>
@@ -53,15 +53,24 @@ const Couture = () => {
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Matériel :</span>
-                <span>Tout le matériel est fourni</span>
+                <span>Tout le matériel de couture est fourni (machine à coudre, patrons, tissus, mercerie, ....)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-medium min-w-[120px]">Collation :</span>
+                <span>Thé et café à volonté ainsi qu’une petite pause gourmande prévue : sucré ou salé, à décider ensemble à l’avance.</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-medium min-w-[120px]">Lieu :</span>
-                <span>Chez ChloHal</span>
+                <span>Chez moi (quartier La Chasse à Etterbeek)
+</span>
               </li>
               <li className="flex gap-2">
-                <span className="font-medium min-w-[120px]">Pause :</span>
-                <span>En-cas sucré ou salé inclus</span>
+                <span className="font-medium min-w-[120px]">Tarif :</span>
+                <span><ul>
+                  <li>50€ pour 1 personne</li>
+                  <li>60€ pour un groupe de 2 personnes</li>
+                  <li>70€ pour un groupe de 3 personnes</li></ul></span>
+
               </li>
             </ul>
           </section>
@@ -82,6 +91,17 @@ const Couture = () => {
             </a>
           </Button>
         </section>
+          {/* Galerie de photos */}
+          <section className="mt-12">
+            <h2 className="font-serif text-2xl font-bold text-primary mb-6 text-center">Galerie</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+             <img src="/couture1.jpg" alt="Couture 1" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/couture2.jpg" alt="Couture 2" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/couture3.jpg" alt="Couture 3" className="rounded-lg shadow-md object-cover w-full h-64" />
+              <img src="/couture4.jpg" alt="Couture 4" className="rounded-lg shadow-md object-cover w-full h-64" /> 
+              <img src="/couture5.jpg" alt="Couture 5" className="rounded-lg shadow-md object-cover w-full h-64" />
+            </div>
+          </section>
       </div>
     </div>
   );
