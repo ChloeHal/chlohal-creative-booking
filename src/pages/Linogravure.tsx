@@ -13,27 +13,24 @@ const Linogravure = () => {
         
         <div className="prose prose-lg max-w-none mb-12">
          <section className="mb-8">
-  <h2 className="font-serif text-2xl font-bold text-primary mb-4">
-    Description de l'atelier
-  </h2>
-  
-  <h3 className="font-serif text-2xl font-bold text-primary mb-3">Le principe :</h3>
-  <p className="text-muted-foreground leading-relaxed mb-4">
-    Cet atelier vous initie aux techniques basiques de la couture à travers un apprentissage progressif et bienveillant. Entre potes (1 à 3 personnes), vous découvrirez les gestes essentiels pour réaliser votre premier projet couture, de la préparation du tissu jusqu'aux finitions. Chaque participant repart avec sa création personnalisée et les bases solides pour continuer à coudre en autonomie.
-  </p>
-  
-  <h3 className="font-serif text-2xl font-bold text-primary mb-3">Le déroulé :</h3>
-  <p className="text-muted-foreground leading-relaxed mb-4">
-    <ul>
-      <li>Introduction aux outils et au matériel de couture (tissus, machine, aiguilles, fils, ciseaux...)</li>
-      <li>Apprentissage des points de base et manipulation de la machine à coudre</li>
-      <li>Choix de votre projet personnel et sélection des tissus dans vos couleurs préférées</li>
-      <li>Réalisation guidée étape par étape : découpe, assemblage, couture et finitions</li>
-      <li>Pause conviviale autour d'un en-cas sucré ou salé</li>
-      <li>Repartez avec votre création terminée !</li>
-    </ul>
-  </p>
-</section>
+            <h2 className="font-serif text-2xl font-bold text-primary mb-4">
+              Description de l'atelier - Découvrez la linogravure et créez une fresque ensemble !
+            </h2>
+                          <h3 className="font-serif text-xl font-bold text-primary mb-3">Le principe :</h3>
+
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              La linogravure est une technique d’impression artisanale : on grave le négatif d'un motif dans une plaque de linoléum (le tampon), puis on l’encre pour le transférer sur un textile. Chaque impression est unique et donne un rendu artistique et authentique.
+            </p>
+                          <h3 className="font-serif text-xl font-bold text-primary mb-3">Le déroulé :</h3>
+
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              <ul><li>Petite formation accompagnée d’un livret pour connaitre les bases</li>
+                <li>Chacun.e crée son propre tampon.</li>
+                <li>On imprime ensemble tous les motifs sur le textile de chacun.e pour réaliser une fresque collective.</li>
+                <li>Repartez avec une création personnalisée et pleine de souvenirs !</li>
+              </ul>
+            </p>
+          </section>
           <section className="mb-8">
             <h2 className="font-serif text-2xl font-bold text-primary mb-4">
               Informations pratiques
@@ -96,7 +93,6 @@ J’ai simplement besoin d’être briefée en amont sur les supports textiles c
         </section>
          {/* Galerie de photos  */}
           <section className="mt-12">
-            <h2 className="font-serif text-2xl font-bold text-primary mb-6 text-center">Galerie</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               <img src="/lino1.png" alt="Couture 1" className="rounded-lg shadow-md object-cover w-full h-64" />
               <img src="/lino2.png" alt="Couture 2" className="rounded-lg shadow-md object-cover w-full h-64" />

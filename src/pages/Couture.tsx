@@ -14,23 +14,23 @@ const Couture = () => {
         <div className="prose prose-lg max-w-none mb-12">
           <section className="mb-8">
             <h2 className="font-serif text-2xl font-bold text-primary mb-4">
-              Description de l'atelier
+              Description de l'atelier - Pourquoi la couture doit être compliquée?
             </h2>
+            <h3 className="font-serif text-xl font-bold text-primary mb-3">Le principe :</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Plongez dans l'univers de la couture lors de cet atelier intimiste et convivial. 
-              Que vous soyez débutant absolu ou que vous souhaitiez rafraîchir vos connaissances, 
-              cet atelier est fait pour vous.
+              Cet atelier vous initie aux techniques basiques de la couture à travers un apprentissage progressif et bienveillant. Entre potes (1 à 3 personnes), vous découvrirez les gestes essentiels pour réaliser votre premier projet couture, de la préparation du tissu jusqu'aux finitions. Chaque participant repart avec sa création personnalisée et les bases solides pour continuer à coudre en autonomie.
             </p>
+  
+  <h3 className="font-serif text-xl font-bold text-primary mb-3">Le déroulé :</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Au programme : découverte de la machine à coudre, apprentissage des points de base, 
-              et réalisation d'un petit projet textile que vous emporterez avec vous. Tout le 
-              matériel est fourni, vous n'avez qu'à venir avec votre bonne humeur et votre 
-              créativité !
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              L'atelier se déroule dans une ambiance détendue, propice aux échanges et à 
-              l'apprentissage. Vous repartirez avec les bases nécessaires pour continuer à 
-              pratiquer chez vous.
+    <ul>
+      <li>Introduction aux outils et au matériel de couture (tissus, machine, aiguilles, fils, ciseaux...)</li>
+      <li>Apprentissage des points de base et manipulation de la machine à coudre</li>
+      <li>Choix de votre projet personnel et sélection des tissus dans vos couleurs préférées</li>
+      <li>Réalisation guidée étape par étape : découpe, assemblage, couture et finitions</li>
+      <li>Pause conviviale autour d'un en-cas sucré ou salé</li>
+      <li>Repartez avec votre création terminée !</li>
+    </ul>
             </p>
           </section>
 
@@ -93,7 +93,6 @@ const Couture = () => {
         </section>
           {/* Galerie de photos */}
           <section className="mt-12">
-            <h2 className="font-serif text-2xl font-bold text-primary mb-6 text-center">Galerie</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
              <img src="/couture1.jpg" alt="Couture 1" className="rounded-lg shadow-md object-cover w-full h-64" />
               <img src="/couture2.jpg" alt="Couture 2" className="rounded-lg shadow-md object-cover w-full h-64" />
