@@ -80,7 +80,7 @@ const Index = () => {
                 </p>
                 <div className="flex gap-4 mt-3 text-sm">
                   <span>4h</span>
-                  <span className="font-semibold text-primary">50€</span>
+                  <span className="font-semibold text-primary">dès 50€</span>
                   <span>1-5 pers.</span>
                 </div>
                 <div className="card-actions mt-4">
@@ -189,7 +189,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-4 bg-base-200 border-t border-base-300 text-center text-sm">
         <p className="font-serif font-bold text-primary">ChloHal</p>
-        <p className="mt-1 opacity-70">© 2025 ChloHal - Tous droits réservés</p>
+        <p className="mt-1 opacity-70">© 2026 ChloHal - Tous droits réservés</p>
       </footer>
     </div>
   );

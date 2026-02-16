@@ -65,7 +65,7 @@ const Couture = () => {
           <p className="leading-relaxed">
             Cet atelier vous initie aux techniques basiques de la couture à
             travers un apprentissage progressif et bienveillant. Entre potes (1
-            à 3 personnes), vous découvrirez les gestes essentiels pour réaliser
+            à 5 personnes), vous découvrirez les gestes essentiels pour réaliser
             votre premier projet couture, de la préparation du tissu jusqu'aux
             finitions. Chaque participant repart avec sa création personnalisée
             et les bases solides pour continuer à coudre en autonomie.
@@ -119,7 +119,7 @@ const Couture = () => {
               {
                 icon: Users,
                 title: "Participants",
-                text: "1 à 3 personnes (on peut compter plus si vous apportez votre machine à coudre)",
+                text: "1 à 5 personnes (on peut compter plus si vous apportez votre machine à coudre)",
               },
               {
                 icon: Package,
@@ -248,7 +248,7 @@ const Couture = () => {
       {/* Footer */}
       <footer className="py-8 px-4 bg-base-200 border-t border-base-300 text-center text-sm">
         <p className="font-serif font-bold text-primary">ChloHal</p>
-        <p className="mt-1 opacity-70">© 2025 ChloHal - Tous droits réservés</p>
+        <p className="mt-1 opacity-70">© 2026 ChloHal - Tous droits réservés</p>
       </footer>
     </div>
   );
