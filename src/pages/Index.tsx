@@ -1,134 +1,177 @@
 import { Navigation } from "@/components/Navigation";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Reviews } from "@/components/Reviews";
+import { ReviewForm } from "@/components/ReviewForm";
 import { Link } from "react-router-dom";
-import { Scissors, Palette } from "lucide-react";
+import { Scissors, Palette, Star } from "lucide-react";
+import { useState } from "react";
 
 const Index = () => {
+  const [showReviewForm, setShowReviewForm] = useState(false);
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
+
+      {/* Hero */}
+      <section className="py-20 px-4 bg-base-200">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">
             Bienvenue
           </h1>
-          <p className="text-md md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-Hello, j'ai 27 ans et une passion dévorante pour tout ce qui touche à la créativité et à ce que je peux faire de mes dix doigts. Ce que j'aime encore plus, c'est de transmettre ma passion et de rendre quelque chose perçu d'inaccessible à la portée de tous.            
+          <p className="text-base md:text-lg max-w-xl mx-auto">
+            Hello, j'ai 27 ans et une passion dévorante pour tout ce qui touche à la créativité
+            et à ce que je peux faire de mes dix doigts. Ce que j'aime encore plus, c'est de
+            transmettre ma passion et de rendre quelque chose perçu d'inaccessible à la portée de tous.
           </p>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 px-4 bg-card">
-        <div className="container mx-auto max-w-3xl">
-          <img src="/moi.png" alt="Couture 1" className="rounded-lg mx-auto object-cover w-32 h-32" />
+      {/* About */}
+      <section className="py-16 px-4">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="avatar mb-6">
+            <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <img src="/moi.png" alt="ChloHal" />
+            </div>
+          </div>
 
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+          <h2 className="text-2xl font-bold font-serif text-primary mb-4">
             A votre service
           </h2>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            Je vous propose des ateliers de couture et de linogravure, entre potes, où chaque groupe bénéficie d'une activité sur mesure et repart avec son propre projet.
+          <p className="mb-3 leading-relaxed">
+            Je vous propose des ateliers de couture et de linogravure, entre potes, où chaque
+            groupe bénéficie d'une activité sur mesure et repart avec son propre projet.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Chaque atelier est un moment où vous apprendrez les techniques fondamentales tout en créant votre propre projet.             
-            Que vous soyez débutant ou que vous souhaitiez perfectionner vos compétences, vous trouverez ici un espace pour créer, vous amuser, découvrir des passions et vous créer des souvenirs.
-
+          <p className="leading-relaxed">
+            Chaque atelier est un moment où vous apprendrez les techniques fondamentales tout en
+            créant votre propre projet. Que vous soyez débutant ou que vous souhaitiez perfectionner
+            vos compétences, vous trouverez ici un espace pour créer, vous amuser, découvrir des
+            passions et vous créer des souvenirs.
           </p>
         </div>
       </section>
 
-      {/* Workshops Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
+      {/* Workshops */}
+      <section className="py-16 px-4 bg-base-200">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold font-serif text-primary mb-10 text-center">
             Les Ateliers proposés
           </h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Couture Workshop */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow border-2 border-primary/20">
-              <div className="h-48 bg-primary/10 flex items-center justify-center">
-                <Scissors className="w-20 h-20 text-primary" />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="font-serif text-2xl font-bold text-primary mb-3">
-                  Atelier Couture
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Découvrez les bases de la couture et créez votre premier projet textile. 
-                  En petit comité (1 à 3 personnes), apprenez les points essentiels et 
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Couture */}
+            <div className="card bg-base-100 border border-base-300">
+              <figure className="px-8 pt-8">
+                <div className="bg-primary/10 rounded-box p-6 w-full flex justify-center">
+                  <Scissors className="w-12 h-12 text-primary" />
+                </div>
+              </figure>
+              <div className="card-body items-center text-center">
+                <h3 className="card-title font-serif text-primary">Atelier Couture</h3>
+                <p className="text-sm">
+                  Découvrez les bases de la couture et créez votre premier projet textile.
+                  En petit comité (1 à 3 personnes), apprenez les points essentiels et
                   repartez avec votre création unique.
                 </p>
-                <div className="flex gap-2 mb-4 text-sm text-muted-foreground">
-                  <span className="font-medium">Durée :</span>
-                  <span>3 heures</span>
+                <div className="flex gap-4 mt-3 text-sm">
+                  <span>3h</span>
+                  <span className="font-semibold text-primary">50€</span>
+                  <span>1-3 pers.</span>
                 </div>
-                <Link to="/couture">
-                  <Button className="w-full">
+                <div className="card-actions mt-4">
+                  <Link to="/couture" className="btn btn-primary btn-sm">
                     Découvrir et réserver
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            {/* Linogravure Workshop */}
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow border-2 border-primary/20">
-              <div className="h-48 bg-primary/10 flex items-center justify-center">
-                <Palette className="w-20 h-20 text-primary" />
+                  </Link>
+                </div>
               </div>
-              <CardContent className="p-6">
-                <h3 className="font-serif text-2xl font-bold text-primary mb-3">
-                  Atelier Linogravure
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Explorez la linogravure. Créez une fresque grâce aux motifs 
-                  que vous aurez imaginés et créés. Un atelier convivial pour 1 à 8 personnes, 
+            </div>
+
+            {/* Linogravure */}
+            <div className="card bg-base-100 border border-base-300">
+              <figure className="px-8 pt-8">
+                <div className="bg-primary/10 rounded-box p-6 w-full flex justify-center">
+                  <Palette className="w-12 h-12 text-primary" />
+                </div>
+              </figure>
+              <div className="card-body items-center text-center">
+                <h3 className="card-title font-serif text-primary">Atelier Linogravure</h3>
+                <p className="text-sm">
+                  Explorez la linogravure. Créez une fresque grâce aux motifs
+                  que vous aurez imaginés et créés. Un atelier convivial pour 1 à 8 personnes,
                   chez moi ou chez vous.
                 </p>
-                <div className="flex gap-2 mb-4 text-sm text-muted-foreground">
-                  <span className="font-medium">Durée :</span>
-                  <span>3 heures</span>
+                <div className="flex gap-4 mt-3 text-sm">
+                  <span>3h</span>
+                  <span className="font-semibold text-primary">dès 50€</span>
+                  <span>1-8 pers.</span>
                 </div>
-                <Link to="/linogravure">
-                  <Button className="w-full">
+                <div className="card-actions mt-4">
+                  <Link to="/linogravure" className="btn btn-primary btn-sm">
                     Découvrir et réserver
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-               {/* Galerie de photos  */}
-       <section className="mt-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-               <img src="/couture1.jpg" alt="Couture 1" className="rounded-lg shadow-md object-cover w-full h-64" />
 
-              <img src="/lino1.png" alt="Couture 1" className="rounded-lg shadow-md object-cover w-full h-64" />
-              <img src="/lino2.png" alt="Couture 2" className="rounded-lg shadow-md object-cover w-full h-64" />
-              <img src="/couture2.jpg" alt="Couture 2" className="rounded-lg shadow-md object-cover w-full h-64" />
+      {/* Reviews */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
+            <h2 className="text-2xl font-bold font-serif text-primary">
+              Avis des participants
+            </h2>
+            <button
+              className="btn btn-outline btn-primary btn-sm"
+              onClick={() => setShowReviewForm(!showReviewForm)}
+            >
+              <Star className="w-4 h-4" />
+              Laisser un avis
+            </button>
+          </div>
 
-              <img src="/lino3.png" alt="Couture 3" className="rounded-lg shadow-md object-cover w-full h-64" />
-              <img src="/lino4.png" alt="Couture 4" className="rounded-lg shadow-md object-cover w-full h-64" />
-                            <img src="/couture4.jpg" alt="Couture 4" className="rounded-lg shadow-md object-cover w-full h-64" /> 
-
-                            <img src="/couture3.jpg" alt="Couture 3" className="rounded-lg shadow-md object-cover w-full h-64" />
- 
-              <img src="/lino5.png" alt="Couture 5" className="rounded-lg shadow-md object-cover w-full h-64" />
-              <img src="/lino6.png" alt="Couture 6" className="rounded-lg shadow-md object-cover w-full h-64" />
-              <img src="/lino7.png" alt="Couture 7" className="rounded-lg shadow-md object-cover w-full h-64" />
-              <img src="/couture5.jpg" alt="Couture 5" className="rounded-lg shadow-md object-cover w-full h-64" />
+          {showReviewForm && (
+            <div className="card bg-base-100 border border-base-300 mb-8">
+              <div className="card-body">
+                <h3 className="card-title text-base">Partagez votre expérience</h3>
+                <ReviewForm onSuccess={() => setShowReviewForm(false)} />
+              </div>
             </div>
-          </section>
+          )}
+
+          <Reviews limit={6} />
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="py-16 px-4 bg-base-200">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl font-bold font-serif text-primary mb-8 text-center">
+            Galerie
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              "/couture1.jpg", "/lino1.png", "/lino2.png", "/couture2.jpg",
+              "/lino3.png", "/lino4.png", "/couture4.jpg", "/couture3.jpg",
+              "/lino5.png", "/lino6.png", "/lino7.png", "/couture5.jpg",
+            ].map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`Création ${idx + 1}`}
+                className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-card border-t">
-        <div className="container mx-auto text-center text-sm text-muted-foreground">
-          <p>© 2025 ChloHal - Tous droits réservés</p>
-        </div>
+      <footer className="py-8 px-4 bg-base-200 border-t border-base-300 text-center text-sm">
+        <p className="font-serif font-bold text-primary">ChloHal</p>
+        <p className="mt-1 opacity-70">© 2025 ChloHal - Tous droits réservés</p>
       </footer>
     </div>
   );
