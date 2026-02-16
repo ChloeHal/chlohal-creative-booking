@@ -19,9 +19,10 @@ const Index = () => {
             Bienvenue
           </h1>
           <p className="text-base md:text-lg max-w-xl mx-auto">
-            Hello, j'ai 27 ans et une passion dévorante pour tout ce qui touche à la créativité
-            et à ce que je peux faire de mes dix doigts. Ce que j'aime encore plus, c'est de
-            transmettre ma passion et de rendre quelque chose perçu d'inaccessible à la portée de tous.
+            Hello, j'ai 27 ans et une passion dévorante pour tout ce qui touche
+            à la créativité et à ce que je peux faire de mes dix doigts. Ce que
+            j'aime encore plus, c'est de transmettre ma passion et de rendre
+            quelque chose perçu d'inaccessible à la portée de tous.
           </p>
         </div>
       </section>
@@ -39,13 +40,15 @@ const Index = () => {
             A votre service
           </h2>
           <p className="mb-3 leading-relaxed">
-            Je vous propose des ateliers de couture et de linogravure, entre potes, où chaque
-            groupe bénéficie d'une activité sur mesure et repart avec son propre projet.
+            Je vous propose des ateliers de couture et de linogravure, entre
+            potes, où chaque groupe bénéficie d'une activité sur mesure et
+            repart avec son propre projet.
           </p>
           <p className="leading-relaxed">
-            Chaque atelier est un moment où vous apprendrez les techniques fondamentales tout en
-            créant votre propre projet. Que vous soyez débutant ou que vous souhaitiez perfectionner
-            vos compétences, vous trouverez ici un espace pour créer, vous amuser, découvrir des
+            Chaque atelier est un moment où vous apprendrez les techniques
+            fondamentales tout en créant votre propre projet. Que vous soyez
+            débutant ou que vous souhaitiez perfectionner vos compétences, vous
+            trouverez ici un espace pour créer, vous amuser, découvrir des
             passions et vous créer des souvenirs.
           </p>
         </div>
@@ -67,16 +70,18 @@ const Index = () => {
                 </div>
               </figure>
               <div className="card-body items-center text-center">
-                <h3 className="card-title font-serif text-primary">Atelier Couture</h3>
+                <h3 className="card-title font-serif text-primary">
+                  Atelier Couture
+                </h3>
                 <p className="text-sm">
-                  Découvrez les bases de la couture et créez votre premier projet textile.
-                  En petit comité (1 à 3 personnes), apprenez les points essentiels et
-                  repartez avec votre création unique.
+                  Découvrez les bases de la couture et créez votre premier
+                  projet textile. En petit comité (1 à 5 personnes), apprenez
+                  les points essentiels et repartez avec votre création unique.
                 </p>
                 <div className="flex gap-4 mt-3 text-sm">
-                  <span>3h</span>
+                  <span>4h</span>
                   <span className="font-semibold text-primary">50€</span>
-                  <span>1-3 pers.</span>
+                  <span>1-5 pers.</span>
                 </div>
                 <div className="card-actions mt-4">
                   <Link to="/couture" className="btn btn-primary btn-sm">
@@ -94,11 +99,13 @@ const Index = () => {
                 </div>
               </figure>
               <div className="card-body items-center text-center">
-                <h3 className="card-title font-serif text-primary">Atelier Linogravure</h3>
+                <h3 className="card-title font-serif text-primary">
+                  Atelier Linogravure
+                </h3>
                 <p className="text-sm">
                   Explorez la linogravure. Créez une fresque grâce aux motifs
-                  que vous aurez imaginés et créés. Un atelier convivial pour 1 à 8 personnes,
-                  chez moi ou chez vous.
+                  que vous aurez imaginés et créés. Un atelier convivial pour 1
+                  à 8 personnes, chez moi ou chez vous.
                 </p>
                 <div className="flex gap-4 mt-3 text-sm">
                   <span>3h</span>
@@ -135,7 +142,9 @@ const Index = () => {
           {showReviewForm && (
             <div className="card bg-base-100 border border-base-300 mb-8">
               <div className="card-body">
-                <h3 className="card-title text-base">Partagez votre expérience</h3>
+                <h3 className="card-title text-base">
+                  Partagez votre expérience
+                </h3>
                 <ReviewForm onSuccess={() => setShowReviewForm(false)} />
               </div>
             </div>
@@ -153,9 +162,18 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              "/couture1.jpg", "/lino1.png", "/lino2.png", "/couture2.jpg",
-              "/lino3.png", "/lino4.png", "/couture4.jpg", "/couture3.jpg",
-              "/lino5.png", "/lino6.png", "/lino7.png", "/couture5.jpg",
+              "/couture1.jpg",
+              "/lino1.png",
+              "/lino2.png",
+              "/couture2.jpg",
+              "/lino3.png",
+              "/lino4.png",
+              "/couture4.jpg",
+              "/couture3.jpg",
+              "/lino5.png",
+              "/lino6.png",
+              "/lino7.png",
+              "/couture5.jpg",
             ].map((src, idx) => (
               <img
                 key={idx}
