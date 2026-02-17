@@ -15,7 +15,7 @@ export const Navigation = () => {
       <input id="mobile-drawer" type="checkbox" className="drawer-toggle" />
 
       <div className="drawer-content">
-        <div className="navbar bg-base-100 border-b border-base-300">
+        <div className="navbar bg-base-100 border-b border-base-300 sticky top-0 z-40">
           <div className="container mx-auto px-4">
             <div className="flex-1">
               <Link to="/" className="text-2xl font-serif font-bold text-primary">
@@ -23,7 +23,7 @@ export const Navigation = () => {
               </Link>
             </div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop */}
             <div className="flex-none hidden md:flex">
               <ul className="menu menu-horizontal px-1 gap-1">
                 <li>
@@ -44,7 +44,7 @@ export const Navigation = () => {
               </ul>
             </div>
 
-            {/* Mobile menu button */}
+            {/* Mobile */}
             <div className="flex-none md:hidden">
               <label htmlFor="mobile-drawer" className="btn btn-square btn-ghost">
                 <Menu className="h-5 w-5" />

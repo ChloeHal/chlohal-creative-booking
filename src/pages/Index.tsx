@@ -162,18 +162,21 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              "/couture1.jpg",
+              "/couture6.webp",
               "/lino1.png",
               "/lino2.png",
-              "/couture2.jpg",
+              "/couture10.webp",
+              "/couture11.webp",
+              "/lino8.webp",
+              "/lino9.webp",
+              "/couture12.webp",
               "/lino3.png",
-              "/lino4.png",
-              "/couture4.jpg",
-              "/couture3.jpg",
-              "/lino5.png",
-              "/lino6.png",
-              "/lino7.png",
-              "/couture5.jpg",
+              "/couture9.webp",
+              "/couture7.webp",
+              "/lino10.JPEG",
+              "/lino11.webp",
+              "/lino12.JPEG",
+              "/lino13.JPEG",
             ].map((src, idx) => (
               <img
                 key={idx}

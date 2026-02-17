@@ -187,10 +187,12 @@ const Linogravure = () => {
               "/lino1.png",
               "/lino2.png",
               "/lino3.png",
-              "/lino4.png",
-              "/lino5.png",
-              "/lino6.png",
-              "/lino7.png",
+              "/lino8.webp",
+              "/lino9.webp",
+              "/lino10.JPEG",
+              "/lino11.webp",
+              "/lino12.JPEG",
+              "/lino13.JPEG",
             ].map((src, idx) => (
               <div key={idx} className="carousel-item">
                 <img

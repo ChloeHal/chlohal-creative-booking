@@ -184,11 +184,12 @@ const Couture = () => {
           </h2>
           <div className="carousel carousel-center max-w-full space-x-3 p-2">
             {[
-              "/couture1.jpg",
-              "/couture2.jpg",
-              "/couture3.jpg",
-              "/couture4.jpg",
-              "/couture5.jpg",
+              "/couture6.webp",
+              "/couture10.webp",
+              "/couture11.webp",
+              "/couture12.webp",
+              "/couture9.webp",
+              "/couture7.webp",
             ].map((src, idx) => (
               <div key={idx} className="carousel-item">
                 <img
