@@ -5,10 +5,9 @@ import type { ReviewSubmission } from "@/types/reviews";
 
 interface ReviewFormProps {
   workshopType?: "couture" | "linogravure";
-  onSuccess?: () => void;
 }
 
-export const ReviewForm = ({ workshopType, onSuccess }: ReviewFormProps) => {
+export const ReviewForm = ({ workshopType }: ReviewFormProps) => {
   const [formData, setFormData] = useState<ReviewSubmission>({
     name: "",
     rating: 5,
@@ -23,15 +22,17 @@ export const ReviewForm = ({ workshopType, onSuccess }: ReviewFormProps) => {
     submit(formData, {
       onSuccess: () => {
         setFormData({ name: "", rating: 5, comment: "", workshop_type: workshopType || "both" });
-        onSuccess?.();
       },
     });
   };
 
   if (isSuccess) {
     return (
-      <div className="alert alert-success">
-        <span>Merci ! Votre avis sera publie apres moderation.</span>
+      <div className="text-center py-6">
+        <p className="font-semibold text-sm">Merci pour votre avis !</p>
+        <p className="text-sm opacity-70 mt-1">
+          Il sera publié sur le site une fois validé.
+        </p>
       </div>
     );
   }
