@@ -41,6 +41,18 @@ export const Navigation = () => {
                     Atelier Linogravure
                   </Link>
                 </li>
+                <li>
+                  <span className="opacity-50 cursor-default flex items-center gap-2">
+                    Fleurs en Perles
+                    <span className="badge badge-sm badge-primary">Bientôt</span>
+                  </span>
+                </li>
+                <li>
+                  <span className="opacity-50 cursor-default flex items-center gap-2">
+                    Canevas
+                    <span className="badge badge-sm badge-primary">Bientôt</span>
+                  </span>
+                </li>
               </ul>
             </div>
 
@@ -75,6 +87,18 @@ export const Navigation = () => {
             <Link to="/linogravure" onClick={closeDrawer} className={isActive("/linogravure") ? "active" : ""}>
               Atelier Linogravure
             </Link>
+          </li>
+          <li>
+            <span className="opacity-50 cursor-default flex items-center gap-2">
+              Fleurs en Perles
+              <span className="badge badge-sm badge-primary">Bientôt</span>
+            </span>
+          </li>
+          <li>
+            <span className="opacity-50 cursor-default flex items-center gap-2">
+              Canevas
+              <span className="badge badge-sm badge-primary">Bientôt</span>
+            </span>
           </li>
         </ul>
       </div>
